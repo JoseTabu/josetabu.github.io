@@ -1,0 +1,62 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" rx="24" fill="url(#bg2)"/>
+  <text x="70" y="105" fill="#F3F4F6" font-family="Segoe UI, Arial" font-size="52" font-weight="700">Pipeline CAEs con n8n + APIs + IA</text>
+  <text x="70" y="150" fill="#60A5FA" font-family="Segoe UI, Arial" font-size="28">Automatizacion de solicitudes, documentos y seguimiento</text>
+
+  <g filter="url(#shadow2)">
+    <rect x="90" y="220" width="1420" height="680" rx="28" fill="#0B1220" stroke="#334155"/>
+  </g>
+
+  <g filter="url(#shadow2)">
+    <rect x="140" y="280" width="280" height="120" rx="14" fill="#1E3A8A"/>
+    <text x="172" y="327" fill="#DBEAFE" font-family="Segoe UI, Arial" font-size="28" font-weight="700">Formulario Web</text>
+    <text x="172" y="360" fill="#BFDBFE" font-family="Segoe UI, Arial" font-size="20">Entrada de solicitud</text>
+
+    <rect x="500" y="280" width="280" height="120" rx="14" fill="#065F46"/>
+    <text x="532" y="327" fill="#D1FAE5" font-family="Segoe UI, Arial" font-size="28" font-weight="700">n8n Orchestrator</text>
+    <text x="532" y="360" fill="#A7F3D0" font-family="Segoe UI, Arial" font-size="20">Router de procesos</text>
+
+    <rect x="860" y="280" width="280" height="120" rx="14" fill="#5B21B6"/>
+    <text x="892" y="327" fill="#EDE9FE" font-family="Segoe UI, Arial" font-size="28" font-weight="700">API Documentos</text>
+    <text x="892" y="360" fill="#DDD6FE" font-family="Segoe UI, Arial" font-size="20">Generacion automatica</text>
+
+    <rect x="1220" y="280" width="240" height="120" rx="14" fill="#9A3412"/>
+    <text x="1252" y="327" fill="#FFEDD5" font-family="Segoe UI, Arial" font-size="28" font-weight="700">CRM</text>
+    <text x="1252" y="360" fill="#FED7AA" font-family="Segoe UI, Arial" font-size="20">Estado expediente</text>
+  </g>
+
+  <g stroke="#38BDF8" stroke-width="7" stroke-linecap="round">
+    <path d="M420 340H500"/>
+    <path d="M780 340H860"/>
+    <path d="M1140 340H1220"/>
+  </g>
+
+  <g filter="url(#shadow2)">
+    <rect x="180" y="500" width="520" height="330" rx="18" fill="#111827" stroke="#374151"/>
+    <text x="220" y="555" fill="#E5E7EB" font-family="Segoe UI, Arial" font-size="30" font-weight="700">Logs y alertas</text>
+    <text x="220" y="602" fill="#9CA3AF" font-family="Segoe UI, Arial" font-size="24">- Notificaciones por error</text>
+    <text x="220" y="642" fill="#9CA3AF" font-family="Segoe UI, Arial" font-size="24">- Reintentos automaticos</text>
+    <text x="220" y="682" fill="#9CA3AF" font-family="Segoe UI, Arial" font-size="24">- Auditoria por solicitud</text>
+
+    <rect x="820" y="500" width="600" height="330" rx="18" fill="#0F172A" stroke="#334155"/>
+    <text x="860" y="555" fill="#E2E8F0" font-family="Segoe UI, Arial" font-size="30" font-weight="700">KPIs de conversion</text>
+    <rect x="860" y="610" width="520" height="18" rx="9" fill="#1E293B"/>
+    <rect x="860" y="610" width="390" height="18" rx="9" fill="#22C55E"/>
+    <text x="1260" y="625" fill="#BBF7D0" font-family="Segoe UI, Arial" font-size="18">75%</text>
+    <rect x="860" y="660" width="520" height="18" rx="9" fill="#1E293B"/>
+    <rect x="860" y="660" width="310" height="18" rx="9" fill="#60A5FA"/>
+    <text x="1180" y="675" fill="#BFDBFE" font-family="Segoe UI, Arial" font-size="18">60%</text>
+    <rect x="860" y="710" width="520" height="18" rx="9" fill="#1E293B"/>
+    <rect x="860" y="710" width="440" height="18" rx="9" fill="#A78BFA"/>
+    <text x="1310" y="725" fill="#DDD6FE" font-family="Segoe UI, Arial" font-size="18">85%</text>
+  </g>
+</svg>

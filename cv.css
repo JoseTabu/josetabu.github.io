@@ -1,0 +1,255 @@
+﻿@page {
+  size: A4;
+  margin: 10mm;
+}
+
+:root {
+  --bg: #0b111f;
+  --panel: #121b2f;
+  --panel-soft: #19233a;
+  --line: rgba(146, 178, 224, 0.32);
+  --text: #f3f8ff;
+  --muted: #b7c8df;
+  --brand: #3aa6ff;
+  --brand-2: #32d2b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 8% 8%, rgba(58, 166, 255, 0.25), transparent 36%),
+    radial-gradient(circle at 90% 2%, rgba(50, 210, 176, 0.2), transparent 28%),
+    linear-gradient(180deg, #09101d, #121c32);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.cv-page {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.cv-header {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(18, 27, 47, 0.86);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  color: var(--brand-2);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 8px 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.role {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.contact {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(7, 13, 24, 0.45);
+}
+
+.cv-photo {
+  width: 100%;
+  max-width: 170px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(146, 178, 224, 0.5);
+  margin: 0 auto 8px;
+  display: block;
+}
+
+.contact p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.86rem;
+}
+
+.contact p + p {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.contact span {
+  color: #8eb1da;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.contact a {
+  color: #9de7ff;
+  text-decoration: none;
+}
+
+.side-col a {
+  color: #9de7ff;
+  text-decoration: none;
+}
+
+.summary {
+  margin-top: 10px;
+}
+
+.layout {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(18, 27, 47, 0.8);
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.02rem;
+  color: #d8ebff;
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+p {
+  margin: 0;
+}
+
+.summary p,
+.item-role,
+.item ul,
+.side-col ul {
+  color: var(--muted);
+  line-height: 1.45;
+  font-size: 0.88rem;
+}
+
+.item + .item {
+  margin-top: 9px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(146, 178, 224, 0.24);
+}
+
+.item-role {
+  margin-top: 4px;
+  color: #9de7ff;
+}
+
+ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+li + li {
+  margin-top: 3px;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.tags li {
+  border: 1px solid rgba(146, 178, 224, 0.28);
+  border-radius: 999px;
+  padding: 5px 8px;
+  text-align: center;
+  color: #dbebff;
+  font-size: 0.78rem;
+  background: rgba(6, 12, 22, 0.55);
+}
+
+.code-card {
+  background: rgba(2, 8, 20, 0.72);
+  border-color: rgba(58, 166, 255, 0.38);
+}
+
+.code-card pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.code-card code {
+  font-family: "JetBrains Mono", monospace;
+  color: #a7f3e3;
+  font-size: 0.74rem;
+  line-height: 1.55;
+}
+
+.cv-footer {
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 12px;
+  background: rgba(18, 27, 47, 0.86);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #9db7d8;
+  font-size: 0.76rem;
+}
+
+@media (max-width: 900px) {
+  .cv-header,
+  .layout,
+  .cv-footer {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}
+
+@media print {
+  body {
+    background: #0b111f;
+  }
+
+  .cv-page {
+    padding: 0;
+  }
+}
